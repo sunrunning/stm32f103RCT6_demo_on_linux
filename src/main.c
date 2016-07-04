@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		};
 		/* GPIO PC12 set, pin=high, LED_E off */
 		//GPIOD->BSRR = GPIO_BSRR_BS6;
-		GPIO_WriteBit(GPIOD,GPIO_Pin_2,Bit_SET);
+		//GPIO_WriteBit(GPIOD,GPIO_Pin_2,Bit_SET);
 		GPIO_WriteBit(GPIOA,GPIO_Pin_8,Bit_RESET);
 		/* delay --> compiler optimizer settings must be "-O0" */
 		delay=500000;
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 		}
 		/* GPIO PC12 reset, pin=low, LED_E on */
 		//GPIOD->BSRR = GPIO_BSRR_BR6;
-		GPIO_WriteBit(GPIOD,GPIO_Pin_2,Bit_RESET);
+		//GPIO_WriteBit(GPIOD,GPIO_Pin_2,Bit_RESET);
 		GPIO_WriteBit(GPIOA,GPIO_Pin_8,Bit_SET);
 		/* delay --> compiler optimizer settings must be "-O0" */
 		delay=500000;
